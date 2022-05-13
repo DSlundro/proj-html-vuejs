@@ -1,27 +1,32 @@
 <template>
-  <div id="app">
-
-  </div>
+    <div id="app">
+        <HeaderSite />
+        <JumbotronSite />
+        <MainSite />
+        <FooterSite />
+    </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import HeaderSite from './components/HeaderSite.vue'
+import JumbotronSite from './components/JumbotronSite.vue'
+import MainSite from './components/MainSite.vue'
+import FooterSite from './components/FooterSite.vue'
 
 export default {
-  name: 'App',
-  components: {
-
-  }
+    name: 'App',
+    components: {
+        HeaderSite,
+        JumbotronSite,
+        MainSite,
+        FooterSite,
+    }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
-  color: #2c3e50;
 
 }
 </style>

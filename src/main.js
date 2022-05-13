@@ -3,7 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-// Bootstrap
+//
 const bootstrap = require('bootstrap')
 Vue.use(bootstrap)
 
