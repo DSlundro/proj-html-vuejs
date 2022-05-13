@@ -79,14 +79,17 @@ header{
         position: relative;
         input{
             background-color: $Hint-of-Red;
+            &:focus{
+                box-shadow: none;
+            }
         }
         svg{
             position: absolute;
             top: 12px;
-            right: 15px;
+            right: 10px;
             color: $Royal-Blue;
             font-size: 15px;
-        } 
+        }
     }
 }
 

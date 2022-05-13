@@ -34,3 +34,13 @@ $text-font-family: "Roboto";
 $text-font-weight: 400;
 $accent-font-family: "Roboto";
 $accent-font-weight: 500;
+
+// BUTTON
+.btn{
+    background-color: $Mountain-Meadow;
+    color: $White;
+    font-size: 12px;
+    padding: 10px 35px;
+    &:hover{background-color: $Turquoise-Blue;}
+    &:focus{box-shadow: none;}
+}

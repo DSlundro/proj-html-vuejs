@@ -32,5 +32,6 @@ export default {
 #app {
     font-family: $primary-font-family;
     .container{width: 1200px !important;}
+    a{text-decoration: none;}
 }
 </style>
