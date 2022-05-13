@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>HELLO</h1>
+    <p>Distant learning for further expansion</p>
     </header>
 </template>
 
@@ -11,5 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1{color: $Thunderbird;}
+
+
 </style>
