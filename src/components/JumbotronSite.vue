@@ -1,5 +1,11 @@
 <template>
     <div class="jumbotron">
+        <aside class="d-flex flex-column gap-3 justify-content-center align-items-center">
+            <font-awesome-icon icon="fa-solid fa-headset" />
+            <font-awesome-icon icon="fa-solid fa-life-ring" />
+            <font-awesome-icon icon="fa-solid fa-book" />
+            <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+        </aside>
         <div class="container">
             <div class="row jb-row align-items-center py-5">
 
@@ -41,10 +47,12 @@
                 <!-- RIGHT COL -->
                 <div class="col-7 d-flex justify-content-center">
                     <!-- IMG GROUP -->
-                    <div class="jb-img">
+                        <div class="jb-img">
 
                         <!-- CENTRAL IMG -->
-                        <img class="rounded-img" src="@/assets/img/about-me.jpg" alt="">
+                        <div class="rounded-img d-flex justify-content-center">
+                            <img src="@/assets/img/about-me.jpg" alt="">
+                        </div>
 
                         <!-- BACK IMG -->
                         <div class="jb-back-img">
@@ -104,6 +112,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+aside{
+    position: fixed;
+    right: 0;
+    top: 150px;
+    box-shadow: 0 1px 7px $Shady-Lady;
+    border-radius:5px;
+    padding: 10px 7px;
+    svg{
+        cursor: pointer;
+    }
+}
 .jb-row{
 
     .jb-title{
@@ -127,10 +146,12 @@ export default {
         position: relative;
         .rounded-img{
             position: relative;
-            border-radius: 50%;
-            width: 100%;
             height: auto;
             z-index: 10;
+            img{
+                border-radius: 50%;
+                width: 85% !important;
+            }
         }
         .jb-back-img{
             width: 100%;
@@ -142,7 +163,7 @@ export default {
                 position: absolute;
                 top: 50%;
                 transform: translate(0, -50%);
-                left: -50px;
+                left: -30px;
                 img{
                     width: 90%;
                 }
@@ -151,17 +172,17 @@ export default {
                     position: absolute;
                     color: $Eunry-LightVibrant;
                     bottom: 10px;
-                    left: 22px;
+                    left: 45px;
                 }
             }
             .jb-back-img-b{
                 position: absolute;
-                right: 80px;
-                bottom: 0;
+                right: 85px;
+                bottom: 10px;
             }
             .jb-back-img-r{
                 position: absolute;
-                right: -110px;
+                right: -72px;
                 top: 90px;
             }
         }
