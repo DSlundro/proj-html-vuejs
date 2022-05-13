@@ -51,6 +51,7 @@
                             </ul>
                             <form class="form-inline my-2 my-lg-0 d-flex">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" aria-describedby="search-addon">
+                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
                             </form>
                         </div>
                     </nav>
@@ -74,8 +75,18 @@ header{
     nav li a{
         color: $Cod-Gray !important;
     }
-    form input{
-        background-color: $Hint-of-Red;
+    form{  
+        position: relative;
+        input{
+            background-color: $Hint-of-Red;
+        }
+        svg{
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            color: $Royal-Blue;
+            font-size: 15px;
+        } 
     }
 }
 
