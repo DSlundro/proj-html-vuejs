@@ -25,10 +25,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 #app {
     font-family: $primary-font-family;
+    .container{width: 1200px !important;}
 }
 </style>
