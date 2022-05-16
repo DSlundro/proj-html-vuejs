@@ -15,10 +15,10 @@
         </div>
 
         <div class="sc">
-            <div class="row justify-content-around">
+            <div class="row justify-content-center">
 
                 <!-- CARD -->
-                <div class="tlb-card col-4 d-flex flex-column px-5" v-for="(learner, index) in learners" :key="index">
+                <div class="tlb-card col-3 d-flex flex-column p-4 my-3 mx-3" v-for="(learner, index) in learners" :key="index">
                     <!-- TITLE -->
                     <div class="tlb-title py-2">
                         <h6>{{learner.title}}</h6>
@@ -28,7 +28,7 @@
                         <p>{{learner.text}}</p>
                     </div>
                     <!-- USER -->
-                    <div class="tlb-user d-flex align-items-center gap-4 py-3">
+                    <div class="tlb-user d-flex align-items-center">
                         <!-- IMG -->
                         <div class="tlb-user-img">
                             <img :src="learner.img" alt="">
@@ -94,11 +94,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.top-learners{
+    background-color: $Hint-of-Red;
+}
 .tl-title{
         h6{color: $Shady-Lady;text-transform: uppercase;}
         span{color: $Turquoise-Blue;font-weight: 100;}
     }
 .tlb-card{
+    background-color: $White;
     .tlb-title h6{color: $Cod-Gray;}
     .tlb-text p{color: $Shady-Lady;}
     .tlb-user-img img{width: 80px; border-radius: 50%;}
