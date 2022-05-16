@@ -37,10 +37,13 @@ $accent-font-weight: 500;
 
 // BUTTON
 .btn{
-    background-color: $Mountain-Meadow;
-    color: $White;
-    font-size: 12px;
-    padding: 10px 35px;
-    &:hover{background-color: $Turquoise-Blue;}
-    &:focus{box-shadow: none;}
+    background-color: $Mountain-Meadow !important;
+    color: $White !important;
+    font-size: 12px !important;
+    padding: 10px 35px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    &:hover{background-color: $Turquoise-Blue !important;}
+    &:focus{box-shadow: none !important;}
 }

@@ -119,6 +119,7 @@ aside{
     box-shadow: 0 1px 7px $Shady-Lady;
     border-radius:5px;
     padding: 10px 7px;
+    color: $Cod-Gray !important;
     svg{
         cursor: pointer;
     }
