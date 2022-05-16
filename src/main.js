@@ -17,12 +17,14 @@ import { faBook, faCartShopping, faLifeRing,  faDownload, faMagnifyingGlass, faO
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faFacebookSquare, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
 library.add(
   faCircleUser, faMagnifyingGlass, faDownload, faO, 
   faCartShopping, faBook, faLifeRing, faHeadset, faRightLong, 
-  faFileLines, faUser, faCircle, faCalendar, faEye)
+  faFileLines, faUser, faCircle, faCalendar, faEye, 
+  faFacebookSquare, faTwitter, faInstagram, faLinkedin)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
