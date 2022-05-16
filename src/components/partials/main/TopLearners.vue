@@ -99,7 +99,7 @@ export default {
 }
 .tl-title{
         h6{color: $Shady-Lady;text-transform: uppercase;}
-        span{color: $Turquoise-Blue;font-weight: 100;}
+        span{color: $Mountain-Meadow;font-weight: 100;}
     }
 .tlb-card{
     background-color: $White;

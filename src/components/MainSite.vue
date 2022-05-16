@@ -7,6 +7,7 @@
         <OnlineCertification />
         <DatesCourses />
         <BestBlogs />
+        <NewsLetters />
     </main>
 </template>
 
@@ -18,6 +19,7 @@ import TopLearners          from '@/components/partials/main/TopLearners.vue'
 import OnlineCertification  from '@/components/partials/main/OnlineCertification.vue'
 import DatesCourses         from '@/components/partials/main/DatesCourses.vue'
 import BestBlogs            from '@/components/partials/main/BestBlogs.vue'
+import NewsLetters          from '@/components/partials/main/NewsLetters.vue'
 
 export default {
     name: 'MainSite',
@@ -28,7 +30,8 @@ export default {
         TopLearners,
         OnlineCertification,
         DatesCourses,
-        BestBlogs
+        BestBlogs,
+        NewsLetters,
     }
 }
 </script>
