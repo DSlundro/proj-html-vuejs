@@ -113,6 +113,7 @@ export default {
 
 <style lang="scss" scoped>
 aside{
+    background-color: $White;
     position: fixed;
     right: 0;
     top: 150px;
