@@ -5,6 +5,7 @@
         <CompanionShip />
         <TopLearners />
         <OnlineCertification />
+        <DatesCourses />
     </main>
 </template>
 
@@ -14,6 +15,7 @@ import SmartTutoring from '@/components/partials/main/SmartTutoring.vue'
 import CompanionShip from '@/components/partials/main/CompanionShip.vue'
 import TopLearners from '@/components/partials/main/TopLearners.vue'
 import OnlineCertification from '@/components/partials/main/OnlineCertification.vue'
+import DatesCourses from '@/components/partials/main/DatesCourses.vue'
 
 export default {
     name: 'MainSite',
@@ -23,6 +25,7 @@ export default {
         CompanionShip,
         TopLearners,
         OnlineCertification,
+        DatesCourses,
     }
 }
 </script>
