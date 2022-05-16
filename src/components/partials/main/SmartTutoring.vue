@@ -2,15 +2,7 @@
     <section class="tutoring py-4">
         <div class="container py-5">
             <div class="row">
-                <!-- TITLE -->
-                <div class="st-title col-12 text-center">
-                    <h6>
-                        MAXCOACH AVAILABLE COURSES
-                    </h6>
-                    <h2>
-                        Access <span>Smart Tutoring</span> Program For Benefits.
-                    </h2>
-                </div>
+                
 
                 <!-- CARD -->
                 <div class="st-card col-4 py-3 px-3" v-for="(st, index) in tutoring" :key="index">
