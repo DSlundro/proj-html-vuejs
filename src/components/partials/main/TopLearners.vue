@@ -15,7 +15,7 @@
         </div>
 
         <div class="sc">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center m-0">
 
                 <!-- CARD -->
                 <div class="tlb-card col-3 d-flex flex-column p-4 my-3 mx-3" v-for="(learner, index) in learners" :key="index">

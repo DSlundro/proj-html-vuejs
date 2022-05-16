@@ -1,7 +1,7 @@
 <template>
     <section class="dates">
         <div class="container">
-            <div class="row">
+            <div class="row m-0">
                 <div class="col-6 d-flex text-center justify-content-between">
                     <div class="dc-card">
                         <h6>Successfully <br> trained</h6>
