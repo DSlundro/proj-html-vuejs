@@ -6,7 +6,8 @@ Vue.config.productionTip = false
 // Bootstrap
 const bootstrap = require('bootstrap')
 Vue.use(bootstrap)
-import 'bootstrap/dist/js/bootstrap.min.js'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
