@@ -7,7 +7,7 @@
                     <div class="co-text">
                             <!-- SUBTITLE -->
                         <div class="co-subtitle">
-                            <h6 class="m-0">Start today for getting <span>Online Certification</span></h6>
+                            <h6 class="m-0 fs-5">Start today for getting <span>Online Certification</span></h6>
                         </div>
                         <!-- TITLE -->
                         <div class="co-title">

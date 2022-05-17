@@ -44,7 +44,7 @@ export default {
     padding: 70px 0px;
     margin: 0 55px;
     h6  {font-size: 22px; font-weight: 500;}
-    h2  {font-size: 50px; color: $Mountain-Meadow; font-weight: bold;}
+    h2  {font-size: 50px; color: $Mountain-Meadow; font-weight: bold; padding: 16px 0;}
     p   {font-size: 16px; color: $Shady-Lady; text-transform: uppercase;}
 }
 </style>
