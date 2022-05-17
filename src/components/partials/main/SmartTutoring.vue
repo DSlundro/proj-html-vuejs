@@ -78,5 +78,14 @@ export default {
         .st-name{color: $Cod-Gray;}
         .st-text, a{color: $Shady-Lady;}
     }
+    .st-go{
+        *{transition: all 0.1s;}
+        a{
+            &:hover{
+                color: $Mountain-Meadow;
+                border-bottom: 1px solid $Mountain-Meadow;
+            }
+        }
+    }
 }
 </style>

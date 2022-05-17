@@ -8,10 +8,15 @@
                     <!-- IMG -->
                     <div class="ps-img">
                         <div class="ps-front-img">
-                            <img src="@/assets/img/poster.jpg" alt="">
+                            <img class="rounded-3" src="@/assets/img/poster.jpg" alt="">
                         </div>
                         <div class="ps-back-img">
-                            
+                            <div class="ps-back-img-b">
+                                <img src="@/assets/img/maxcoach-shape-07-150x150.png" alt="">
+                            </div>
+                            <div class="ps-back-img-ts">
+                                <img src="@/assets/img/maxcoach-shape-05-150x150.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <!-- YOUTUBE -->
@@ -41,6 +46,10 @@
                     <div class="ps-link py-3">
                         <a href="#">Download free guidebook <font-awesome-icon icon="fa-solid fa-right-long" class="ps-2"/></a>
                     </div>
+
+                    <div class="ps-back-img-tr">
+                        <font-awesome-icon icon="fa-solid fa-o" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,6 +70,20 @@ export default {
             position: relative;
             .ps-back-img{
                 position: absolute;
+                width: 100%;
+                .ps-back-img-b{
+                    position: absolute;
+                    right: -10px;
+                    bottom: -95px;
+                    z-index: -1;
+                }
+                .ps-back-img-ts{
+                    position: absolute;
+                    left: -90px;
+                    top: -380px;
+                    z-index: -1;
+                }
+                
             }
         }
         .ps-yt{
@@ -73,12 +96,25 @@ export default {
         }        
     }
     .ps-right{
+        position: relative;
         .ps-subtitle{color: $Shady-Lady;}
         .ps-title{color: $Cod-Gray;
             span{color: $Mountain-Meadow;}
         }
         .ps-text{color: $Shady-Lady;}
-        .ps-link a{color: $Mountain-Meadow;}
+        .ps-link a{
+            color: $Mountain-Meadow;
+            &:hover{
+                border-bottom: 1px solid $Mountain-Meadow;
+            }
+        }
+        .ps-back-img-tr{
+                    position: absolute;
+                    color: $Eunry-LightVibrant;
+                    font-size: 70px;
+                    top: -70px;
+                    left: 10px;
+                }
     }
 }
 </style>
