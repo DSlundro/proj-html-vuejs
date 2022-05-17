@@ -1,7 +1,7 @@
 <template>
-    <section class="companionship">
-        <div class="container">
-            <div class="row justify-content-between">
+    <section class="companionship py-5">
+        <div class="container py-5">
+            <div class="row justify-content-between pb-5">
 
                 <!-- LEFT -->
                 <div class="ps-left col-7">

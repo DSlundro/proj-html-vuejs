@@ -47,14 +47,6 @@
                     </div>
                 </div>
 
-                <div class="col-12 text-center py-5">
-                    <div class="d-flex gap-2 justify-content-center">
-                        <font-awesome-icon icon="fa-solid fa-circle" />
-                        <font-awesome-icon icon="fa-solid fa-circle" />
-                        <font-awesome-icon icon="fa-solid fa-circle" />
-                        <font-awesome-icon icon="fa-solid fa-circle" />
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -89,7 +81,7 @@ export default {
                 },
             ]
         }
-    }
+    },
 }
 </script>
 
@@ -102,6 +94,13 @@ export default {
         span{color: $Mountain-Meadow;font-weight: 100;}
     }
 .tlb-card{
+    filter: brightness(90%);
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.322);
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        filter: brightness(100%);
+    }
     background-color: $White;
     .tlb-title h6{color: $Cod-Gray;}
     .tlb-text p{color: $Shady-Lady;}

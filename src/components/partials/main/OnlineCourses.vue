@@ -128,6 +128,9 @@ export default {
             color: $Cod-Gray;
             font-weight: $accent-font-weight;
             letter-spacing: 1px;
+            &:hover{
+                color: $Mountain-Meadow;
+            }
         }
         .content{
             color: $Shady-Lady;

@@ -92,11 +92,14 @@ export default {
 
 <style lang="scss" scoped>
 footer{
+    *{transition: 0.1s !important;}
     color: $Shady-Lady;
     p{
         font-size: 14px;
     }
-    
+    .ft-address-social{
+        svg:hover{color: $Mountain-Meadow; cursor: pointer;}
+    }
 
 }
 </style>

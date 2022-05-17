@@ -23,5 +23,10 @@ export default {
 <style lang="scss" scoped>
 nav li a{
     color: $Cod-Gray !important;
+    &:hover{
+        color: $Mountain-Meadow !important; 
+        background-color: white;
+        transition: all 0.1s;
+        }
 }
 </style>

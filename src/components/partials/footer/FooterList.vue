@@ -20,6 +20,6 @@ export default {
 <style lang="scss" scoped>
 ul{
         th{color: black; padding-bottom: 5px;}
-        li{list-style: none; padding: 5px 0; font-size: 14px;}
+        li{list-style: none; padding: 5px 0; font-size: 14px;&:hover{color: $Mountain-Meadow; cursor: pointer;}}
     }
 </style>

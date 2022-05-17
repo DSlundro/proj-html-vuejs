@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="@/assets/img/dark-logo.png" alt="">
+                   <a href="#"> <img src="@/assets/img/dark-logo.png" alt=""></a>
                 </div>
 
                 <div class="col-10 d-flex justify-content-end">
@@ -116,14 +116,22 @@ header{
             background-color: $Hint-of-Red;
             &:focus{
                 box-shadow: none;
+                border: 1px solid $Mountain-Meadow;
             }
         }
         svg{
             position: absolute;
             top: 12px;
             right: 10px;
-            color: $Royal-Blue;
+            color: $Mountain-Meadow;
             font-size: 15px;
+        }
+    }
+    li svg{
+    &:hover{
+        color: $Mountain-Meadow !important; 
+        transition: all 0.1s !important;
+        cursor: pointer;
         }
     }
 }

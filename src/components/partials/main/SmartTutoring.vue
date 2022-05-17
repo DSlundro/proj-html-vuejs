@@ -2,7 +2,16 @@
     <section class="tutoring py-4">
         <div class="container py-5">
             <div class="row">
-                
+
+                <!-- TITLE -->
+                <div class="st-title col-12 text-center py-3">
+                    <h6>
+                        MAXCOACH AVAILABLE COURSES
+                    </h6>
+                    <h2>
+                        Access <span>Smart Tutoring</span> Program For Benefits.
+                    </h2>
+                </div>
 
                 <!-- CARD -->
                 <div class="st-card col-4 py-3 px-3" v-for="(st, index) in tutoring" :key="index">
@@ -63,7 +72,7 @@ export default {
 .tutoring{
     .st-title{
         h6{color: $Shady-Lady;text-transform: uppercase;}
-        span{color: $Turquoise-Blue;font-weight: 100;}
+        span{color: $Mountain-Meadow;font-weight: 100;}
     }
     .st-card{
         .st-name{color: $Cod-Gray;}

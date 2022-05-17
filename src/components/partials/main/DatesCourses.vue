@@ -11,7 +11,7 @@
                     <div class="dc-card">
                         <h6>Proudly <br> Received</h6>
                         <h2>19</h2>
-                        <p>Countrywide</p>
+                        <p>Countrywide Awards</p>
                     </div>
                 </div>
                 <div class="col-6 d-flex text-center justify-content-between">
@@ -41,8 +41,8 @@ export default {
 .col-6:first-child{border-left: 2px solid $Hint-of-Red;}
 .col-6:last-child{border-left: 2px solid $Hint-of-Red;border-right: 2px solid $Hint-of-Red;}
 .dc-card{
-    padding: 70px 50px;
-    margin: 0 25px;
+    padding: 70px 0px;
+    margin: 0 55px;
     h6  {font-size: 22px; font-weight: 500;}
     h2  {font-size: 50px; color: $Mountain-Meadow; font-weight: bold;}
     p   {font-size: 16px; color: $Shady-Lady; text-transform: uppercase;}
