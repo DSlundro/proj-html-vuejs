@@ -113,6 +113,7 @@ export default {
         font-weight: 200;
     }
     .bb-card{
+        &:hover {transform: scale(1.04); cursor: pointer;}
         background-color: $White;
         width: 350px;
         border-radius: 7px;

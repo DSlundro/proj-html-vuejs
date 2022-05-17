@@ -1,10 +1,10 @@
 <template>
     <div class="jumbotron">
         <aside class="d-flex flex-column gap-3 justify-content-center align-items-center">
-            <font-awesome-icon icon="fa-solid fa-headset" />
-            <font-awesome-icon icon="fa-solid fa-life-ring" />
-            <font-awesome-icon icon="fa-solid fa-book" />
-            <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+            <font-awesome-icon icon="fa-solid fa-headset" title="Contact Us"/>
+            <font-awesome-icon icon="fa-solid fa-life-ring" title="Select Demo"/>
+            <font-awesome-icon icon="fa-solid fa-book" title="Documentation"/>
+            <font-awesome-icon icon="fa-solid fa-cart-shopping" title="Purchase Maxcoach"/>
         </aside>
         <div class="container">
             <div class="row jb-row align-items-center py-5">
@@ -80,23 +80,8 @@
                 <div class="col-12 jb-clients-img">
                     <!-- CLIENTS IMG -->
                     <div class="row m-0 d-flex justify-content-between align-items-center py-5">
-                        <div class="col-2">
-                            <img src="@/assets/img/client-logo-01.png" alt="">
-                        </div>
-                        <div class="col-2" >
-                            <img src="@/assets/img/client-logo-02.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img src="@/assets/img/client-logo-03.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img src="@/assets/img/client-logo-04.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img src="@/assets/img/client-logo-05.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img src="@/assets/img/client-logo-06.png" alt="">
+                        <div class="col-2" v-for="(partner, index) in partners" :key="index">
+                            <img :src="partner.img" alt="">
                         </div>
                     </div>
                 </div>
@@ -107,7 +92,19 @@
 
 <script>
 export default {
-    name: 'JumbotronSite'
+    name: 'JumbotronSite',
+    data(){
+        return{
+            partners:[
+                {img: require('@/assets/img/client-logo-01.png')},
+                {img: require('@/assets/img/client-logo-02.png')},
+                {img: require('@/assets/img/client-logo-03.png')},
+                {img: require('@/assets/img/client-logo-04.png')},
+                {img: require('@/assets/img/client-logo-05.png')},
+                {img: require('@/assets/img/client-logo-06.png')},
+            ]
+        }
+    },
 }
 </script>
 
@@ -142,6 +139,11 @@ aside{
     .jb-question{
         a{
             color: $Jungle-Green;
+            font-weight: bold;
+            border-bottom: 1px solid $Hint-of-Red;
+            &:hover{
+                border-bottom: 1px solid $Mountain-Meadow;
+            }
         }
     }
     .jb-img {
@@ -191,6 +193,12 @@ aside{
     }
     .jb-clients-img{
         text-align: center;
+        img{
+            &:hover{
+            transform: scale(1.1);
+            ;
+            }
+        }
     }
 }
 </style>

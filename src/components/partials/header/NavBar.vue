@@ -3,7 +3,7 @@
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         {{nav.menu}}
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu p-3">
         <li  v-for="(obj, index) in nav.dropdown" :key="index">
             <a class="dropdown-item" href="#">{{obj.item}}</a>
         </li>

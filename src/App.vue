@@ -30,8 +30,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 #app {
-    font-family: $primary-font-family;
+    font-family: $primary-font-family !important;
     .container{width: 1200px !important;}
     a{text-decoration: none;}
 }
+*{transition: all .3s linear }
 </style>

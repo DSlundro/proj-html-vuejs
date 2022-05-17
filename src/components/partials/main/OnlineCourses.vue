@@ -13,12 +13,12 @@
                     </h2>
                 </div>
 
-                <div class="col-6 d-flex gap-4 gy-5 py-3" v-for="(course, index) in courses" :key="index">
+                <div class="course col-6 d-flex gap-4 gy-5 py-3" v-for="(course, index) in courses" :key="index">
                     <div>
                         <img :src="course.img" :alt="course.img">
                     </div>
                     <div class="description d-flex flex-column justify-content-center">
-                        <h3 class="price">{{course.price}}</h3>
+                        <h3 class="price">{{course.price}}<span>{{course.rest}}</span></h3>
                         <p class="text">{{course.text}}</p>
                         <div class="content d-flex gap-5">
                             <div>
@@ -51,7 +51,8 @@ export default {
             courses: [
                 {
                     img: require('@/assets/img/course-1.jpg'),
-                    price: '$40.00',
+                    price: '$40',
+                    rest: '.00',
                     text: 'Learging to Write as a Professional Author',
                     lessons: '20',
                     students: '50',
@@ -65,28 +66,32 @@ export default {
                 },
                 {
                     img: require('@/assets/img/course-3.jpg'),
-                    price: '$19.00',
+                    price: '$19',
+                    rest: '.00',
                     text: 'Open Programming Courses for Everyone: Python',
                     lessons: '17',
                     students: '62',
                 },
                 {
                     img: require('@/assets/img/course-4.jpg'),
-                    price: '$26.00',
+                    price: '$26',
+                    rest: '.00',
                     text: 'Academic Listening and Note-taking',
                     lessons: '14',
                     students: '67',
                 },
                 {
                     img: require('@/assets/img/course-5.jpg'),
-                    price: '$39.00',
+                    price: '$39',
+                    rest: '.00',
                     text: 'Master jQuery in a Short Period of Time',
                     lessons: '6',
                     students: '51',
                 },
                 {
                     img: require('@/assets/img/course-6.jpg'),
-                    price: '$59.00',
+                    price: '$59',
+                    rest: '.00',
                     text: 'Introduction to Javascript for Begginers',
                     lessons: '14',
                     students: '76',
@@ -99,6 +104,7 @@ export default {
 
 <style lang="scss" scoped>
 .courses{
+    h2, p{color: $Cod-Gray}
     background-color: $Hint-of-Red;
     .title{
         h6{
@@ -128,5 +134,15 @@ export default {
             font-size: 12px;
         }
     }
+    .course:hover{
+        background-color: $White;
+        cursor: pointer;
+    }
+    h3 {
+        font-weight: bold;
+        span{
+            font-size: 14px;
+        }
+    }  
 }
 </style>

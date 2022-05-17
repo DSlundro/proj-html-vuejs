@@ -1,6 +1,6 @@
 // COLOR CUBE
 $White:                          #ffffff;
-$Cod-Gray:                       #0b0b0b;
+$Cod-Gray:                       #3F3A64;
 $Shady-Lady:                     #aeadae;
 $Mountain-Meadow:                #1fad96;
 $Emperor:                        #504442;
@@ -45,6 +45,6 @@ $accent-font-weight: 500;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    &:hover{background-color: $Turquoise-Blue !important;}
+    &:hover{background-color: $Cod-Gray !important;}
     &:focus{box-shadow: none !important;}
 }
