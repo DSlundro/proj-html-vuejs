@@ -38,31 +38,7 @@
 
                 <!-- LISTS -->
                 <div class="col-7 row m-0">
-                    <div class="col-3">
-                        <ul>
-                            <th>Explore</th>
-                            <li>Start here</li>
-                            <li>Blog</li>
-                            <li>About us</li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <ul>
-                            <th><br></th>
-                            <li>Success story</li>
-                            <li>Courses</li>
-                            <li>Contact us</li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <ul>
-                            <th>Information</th>
-                            <li>Membership</li>
-                            <li>Purchase guide</li>
-                            <li>Privacy policy</li>
-                            <li>Terms of services</li>
-                        </ul>
-                    </div>
+                    <FooterList :list="list" v-for="(list, index) in lists" :key="index"/>
                 </div>
 
                 <div class="col-12 text-center pt-5">
@@ -74,8 +50,43 @@
 </template>
 
 <script>
+import FooterList from '@/components/partials/footer/FooterList.vue'
+
 export default {
-    name: 'FooterSite'
+    name: 'FooterSite',
+    components:{
+        FooterList,
+    },
+    data(){
+        return{
+            lists:[
+                {
+                    title: 'Explore',
+                    items:[
+                        {item: 'Start Here'},
+                        {item: 'Blog'},
+                        {item: 'About us'},
+                    ]
+                },
+                {
+                    items:[
+                        {item: 'Success story'}, 
+                        {item: 'Courses'}, 
+                        {item: 'Contact us'}
+                    ]
+                },
+                {
+                    title: 'Information',
+                    items:[
+                        {item: 'Membership'}, 
+                        {item: 'Purchase guide'}, 
+                        {item: 'Privacy policy'}, 
+                        {item: 'Terms of services'}
+                    ]
+                },
+            ]
+        }
+    },
 }
 </script>
 
@@ -85,10 +96,7 @@ footer{
     p{
         font-size: 14px;
     }
-    ul{
-        th{color: black; padding-bottom: 5px;}
-        li{list-style: none; padding: 5px 0; font-size: 14px;}
-    }
+    
 
 }
 </style>
