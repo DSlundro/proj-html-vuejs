@@ -68,7 +68,7 @@ export default {
         background-color: $Hint-of-Red;
         border-radius: 0 !important;
         height: 100%;
-        &:focus{box-shadow: none;}
+        &:focus{box-shadow: none; border: 1px solid $Mountain-Meadow;}
     }
     .nl-img-r{
         position: relative;
