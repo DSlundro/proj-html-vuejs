@@ -1,4 +1,6 @@
 # proj-html-vuejs
+![localhost_8081_](https://user-images.githubusercontent.com/97912982/173771787-d71e044d-a89a-4b09-adab-91a9aa9b376d.png)
+
 
 ## Project setup
 ```
